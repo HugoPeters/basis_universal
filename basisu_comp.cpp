@@ -480,6 +480,11 @@ namespace basisu
 				if (!generate_mipmaps(file_image, slices, m_any_source_image_has_alpha))
 					return false;
 			}
+            else if (m_params.m_mip_use_manual)
+            {
+                for (uint32_t mip_index = 0; mip_index < m_params.m_per_img_mips[source_file_index].size(); ++mip_index)
+                    slices.push_back(m_params.m_per_img_mips[source_file_index][mip_index]);
+            }
 
 			uint_vec mip_indices(slices.size());
 			for (uint32_t i = 0; i < slices.size(); i++)

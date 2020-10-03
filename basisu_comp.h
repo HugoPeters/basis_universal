@@ -247,6 +247,8 @@ namespace basisu
 			m_endpoint_rdo_thresh.clear();
 						
 			m_mip_gen.clear();
+            m_mip_use_manual.clear();
+            m_per_img_mips.clear();
 			m_mip_scale.clear();
 			m_mip_filter = "kaiser";
 			m_mip_scale = 1.0f;
@@ -350,7 +352,12 @@ namespace basisu
 		param<int> m_global_mod_bits;
 		
 		// mipmap generation parameters
-		bool_param<false> m_mip_gen;
+        bool_param<false> m_mip_gen;
+
+        // use manual mips provided
+        bool_param<false> m_mip_use_manual;
+        std::vector<std::vector<image>> m_per_img_mips;
+
 		param<float> m_mip_scale;
 		std::string m_mip_filter;
 		bool_param<false> m_mip_srgb;
