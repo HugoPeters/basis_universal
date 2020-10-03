@@ -79,6 +79,8 @@
 #define strcasecmp _stricmp
 #endif
 
+//#define BASISU_FORCE_DEVEL_MESSAGES 1
+
 // Set to one to enable debug printf()'s when any errors occur, for development/debugging. Especially useful for WebGL development.
 #ifndef BASISU_FORCE_DEVEL_MESSAGES
 #define BASISU_FORCE_DEVEL_MESSAGES 0

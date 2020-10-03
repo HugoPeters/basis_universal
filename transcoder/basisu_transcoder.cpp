@@ -16,6 +16,7 @@
 #include "basisu_transcoder.h"
 #include <limits.h>
 #include <vector>
+#include "WAR_BasisTranscodeDefines.h"
 
 #ifndef BASISD_IS_BIG_ENDIAN
 // TODO: This doesn't work on OSX. How can this be so difficult?
