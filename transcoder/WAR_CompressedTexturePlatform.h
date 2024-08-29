@@ -14,7 +14,7 @@
 #define WAR_TEXFMT_INCLUDE_ETC2_EAC_RG11               0
 #define WAR_TEXFMT_INCLUDE_FXT1                        0
 #define WAR_TEXFMT_INCLUDE_PVRTC2                      0
-#elif defined(__EMSCRIPTEN__) || defined(USING_ANGLE)
+#elif defined(__EMSCRIPTEN__) || defined(USING_ANGLE) || defined(__APPLE__)
 #define WAR_TEXFMT_INCLUDE_DXT1                        1
 #define WAR_TEXFMT_INCLUDE_DXT5A                       1
 #define WAR_TEXFMT_INCLUDE_BC7                         1
